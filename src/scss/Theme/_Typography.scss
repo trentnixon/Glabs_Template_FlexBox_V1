@@ -1,0 +1,67 @@
+
+// Grouped Styles
+h1,h2,h3{ margin: 0 0 1rem 0; font-family: $FontFamilyHeader;}
+p,span,a,blockquote { font-family: $FontFamilyBody; }
+
+
+// Specific Type
+p.standfirst{
+    font-size: $standfirst;
+    line-height: $standfirst ;
+}
+
+p.cta{
+    border-top: 1px solid $Color4;
+    text-align: center;
+    padding: 2rem 10rem;
+    margin: 2rem 0 0;
+    font-size: $PCTA;
+    line-height: $PCTA;
+
+    a{
+        font-weight: bold;
+        color: $Color2
+    }
+}
+
+
+
+blockquote::before{ content: open-quote; }
+blockquote::after{ content: close-quote; }
+
+
+a{ text-decoration: none; color: $Color3;} 
+a:hover{text-decoration: none;}
+
+
+@each $name, $size in $Font-Size-LargeScreen{ 
+    #{$name} { font-size: $size; }
+}
+@each $name, $size in $Font-LineHeight-LargeScreen{
+    #{$name} { line-height: $size; }
+}
+@each $name, $size in $Font-Weigth-LargeScreen{
+    #{$name} { font-weight: $size; }
+}
+
+@media only screen  and (max-width : 1024px) {
+    p.cta{
+        padding: 2rem 3rem;
+    }
+}
+
+
+@media only screen  and (max-width : 568px) {
+    @each $name, $size in $Font-Size-SmallScreen{ 
+        #{$name} { font-size: $size; }
+    }
+    @each $name, $size in $Font-LineHeight-SmallScreen{
+        #{$name} { line-height: $size; }
+    }
+    @each $name, $size in $Font-Weigth-SmallScreen{
+        #{$name} { font-weight: $size; }
+    }
+
+    p.cta{  padding: 2rem 0rem; }
+
+}
