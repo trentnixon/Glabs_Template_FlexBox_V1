@@ -1,1 +1,1 @@
-# Glabs Flexbox Temaplte
+# Glabs Flexbox Template
