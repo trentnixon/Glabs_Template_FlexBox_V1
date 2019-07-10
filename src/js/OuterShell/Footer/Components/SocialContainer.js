@@ -25,7 +25,7 @@ import {
         Button:TwitterShareButton,
         Icon:TwitterIcon,
     },
-    {
+    { 
         Name:"Linkden",
         Button:LinkedinShareButton,
         Icon:LinkedinIcon,
@@ -65,7 +65,7 @@ export default class SocialBar extends React.Component {
                 {
                     SocialIcons.map((icon,i)=>{
                         return(
-                                <li key={i}  onClick={()=>{GA('Social Media Button Clicked',icon.Name , shareUrl)} }>
+                                <li key={i}   className={icon.Name} onClick={()=>{GA('Social Media Button Clicked',icon.Name , shareUrl)} }>
                                     <icon.Button
                                         url={shareUrl} 
                                         quote={title}

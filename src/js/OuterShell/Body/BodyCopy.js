@@ -1,5 +1,6 @@
 import React from 'react';
 // import BodyCopy from "../components/Body/Body_Copy";
+import ClientLogo from "../Header/ClientDetails";
 
 export default class DisplayBodyCopy extends React.Component {
 
@@ -19,7 +20,7 @@ export default class DisplayBodyCopy extends React.Component {
                     break;
                     
                     case 'h2':
-                      return <h2 key={i} className={data.Class}>{data.Copy}</h2>
+                      return <h2 key={i} className={data.Class}>{data.Copy}</h2> 
                     // eslint-disable-next-line
                     break;
                     
@@ -31,7 +32,10 @@ export default class DisplayBodyCopy extends React.Component {
                       return <blockquote key={i} className={data.Class}>{data.Copy}</blockquote>
                       // eslint-disable-next-line
                       break;
-                    
+                    case 'Logo':
+                        return <ClientLogo  key={i}  Client={this.props.UI.Client} />
+                        // eslint-disable-next-line
+                        break;
                     default:
                         return <p key={i} className={data.Class}>{data.Copy}</p>
                   }

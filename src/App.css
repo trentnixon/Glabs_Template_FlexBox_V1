@@ -375,16 +375,23 @@ p, span, a, blockquote {
   font-family: "TS3 Text Sans"; }
 
 p.standfirst {
-  font-size: 1.5rem;
-  line-height: 1.5rem; }
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin: 0 0 20px 0; }
+
+#Bottom .BodyCopy {
+  border-bottom: 1px solid #9B9B9B;
+  padding: 0; }
+  #Bottom .BodyCopy p {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 16px; }
 
 p.cta {
-  border-top: 1px solid #9B9B9B;
   text-align: center;
-  padding: 2rem 10rem;
   margin: 2rem 0 0;
-  font-size: 1.5rem;
-  line-height: 1.5rem; }
+  font-size: 1.25rem;
+  line-height: 1.25rem; }
   p.cta a {
     font-weight: bold;
     color: #000; }
@@ -403,16 +410,16 @@ a:hover {
   text-decoration: none; }
 
 h1 {
-  font-size: 3.75rem; }
+  font-size: 3.125rem; }
 
 h2 {
   font-size: 2.5rem; }
 
 p {
-  font-size: 1.25rem; }
+  font-size: 1rem; }
 
 a {
-  font-size: 1.25rem; }
+  font-size: 1.15rem; }
 
 blockquote {
   font-size: 1.5rem; }
@@ -441,6 +448,9 @@ p {
 blockquote {
   font-weight: bold; }
 
+a {
+  font-weight: bold; }
+
 @media only screen and (max-width: 1024px) {
   p.cta {
     padding: 2rem 3rem; } }
@@ -457,7 +467,7 @@ blockquote {
   blockquote {
     font-size: 1.1rem; }
   h1 {
-    line-height: 2.3rem; }
+    line-height: 2.5rem; }
   h2 {
     line-height: 1.2rem; }
   p {
@@ -577,7 +587,7 @@ blockquote {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 70vh;
+    height: 80vh;
     /**
  * ----------------------------------------
  * animation kenburns-bottom
@@ -614,7 +624,7 @@ blockquote {
     -webkit-transform-origin: bottom;
     transform-origin: bottom; } }
     #Glabs #Header .FlexHeader {
-      height: 70vh;
+      height: 80vh;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -907,10 +917,10 @@ blockquote {
     opacity: 0; } }
       @media only screen and (max-width: 576px) {
         #Glabs #Header .FlexHeader {
-          height: 90vh; } }
+          height: 80vh; } }
     @media only screen and (max-width: 576px) {
       #Glabs #Header {
-        height: 90vh; } }
+        height: 80vh; } }
   #Glabs .GlabsContainer {
     display: flex;
     flex-direction: column;
@@ -948,101 +958,113 @@ blockquote {
     @media only screen and (max-width: 320px) {
       #Glabs .GlabsContainer .ResponsiveContainer {
         width: 95%; } }
-  #Glabs #SocialMediaIcons .GlabsContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start; }
-    @media only screen and (min-width: 1824px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 78.75rem; } }
-    @media only screen and (min-width: 1824px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 78.75rem; } }
-    @media only screen and (min-width: 1200px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 68.75rem; } }
-    @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 58.75rem; } }
-    @media only screen and (min-width: 992px) and (max-width: 1024px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 43.75rem; } }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 43.75rem; } }
-    @media only screen and (min-width: 576px) and (max-width: 768px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 33.75rem; } }
-    @media only screen and (min-width: 480px) and (max-width: 576px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 95%; } }
-    @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 95%; } }
-    @media only screen and (max-width: 320px) {
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
-        width: 95%; } }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe {
-      padding: 1rem 1rem 0;
+  #Glabs #SocialMediaIcons {
+    padding-bottom: 2em; }
+    #Glabs #SocialMediaIcons .GlabsContainer {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
       align-content: flex-start; }
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe h3 {
-        margin: 0; }
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons {
-        border-bottom: 1px solid #69D1CA;
+      @media only screen and (min-width: 1824px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 78.75rem; } }
+      @media only screen and (min-width: 1824px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 78.75rem; } }
+      @media only screen and (min-width: 1200px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 68.75rem; } }
+      @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 58.75rem; } }
+      @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 43.75rem; } }
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 43.75rem; } }
+      @media only screen and (min-width: 576px) and (max-width: 768px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 33.75rem; } }
+      @media only screen and (min-width: 480px) and (max-width: 576px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 95%; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 95%; } }
+      @media only screen and (max-width: 320px) {
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer {
+          width: 95%; } }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start; }
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe h3 {
+          margin: 0;
+          display: none; }
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: flex-start;
+          padding: 0;
+          margin: 0 0 1rem 0;
+          list-style: none; }
+          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li {
+            margin: .2rem;
+            cursor: pointer; }
+            #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li svg {
+              background-color: transparent !important; }
+              #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li svg path {
+                fill: #fefdf8; }
+            #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li circle, #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li rect {
+              fill: #69D1CA; }
+          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Facebook circle, #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Facebook rect {
+            fill: #005689; }
+          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Twitter circle, #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Twitter rect {
+            fill: #03B3EE; }
+          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Linkden circle, #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Linkden rect {
+            fill: #005689; }
+          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Whatsapp circle, #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Whatsapp rect {
+            fill: #075e54; }
+          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Email circle, #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li.Email rect {
+            fill: #767676; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li {
+        -webkit-animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation-delay: 0.1s; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(2) {
+        animation-delay: 0.2s; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(3) {
+        animation-delay: 0.3s; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(4) {
+        animation-delay: 0.4s; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(5) {
+        animation-delay: 0.3s; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(6) {
+        animation-delay: 0.2s; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(7) {
+        animation-delay: 0.1s; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.hide ul li {
+        opacity: 0; }
+      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer .ClientDetails {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        align-content: flex-start;
-        padding: 0 0 1rem 0;
-        margin: 0 0 1rem 0;
-        list-style: none; }
-        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li {
-          margin: .2rem;
-          cursor: pointer; }
-          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li svg {
-            background-color: transparent !important; }
-            #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li svg path {
-              fill: #fefdf8; }
-          #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li circle, #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe ul.ShareButtons li rect {
-            fill: #69D1CA; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li {
-      -webkit-animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation-delay: 0.1s; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(2) {
-      animation-delay: 0.2s; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(3) {
-      animation-delay: 0.3s; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(4) {
-      animation-delay: 0.4s; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(5) {
-      animation-delay: 0.3s; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(6) {
-      animation-delay: 0.2s; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.show ul li:nth-child(7) {
-      animation-delay: 0.1s; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer #ShareMe.hide ul li {
-      opacity: 0; }
-    #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer .ClientDetails {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      align-content: flex-start; }
-      #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer .ClientDetails img {
-        width: 80px;
-        margin: 0 1rem; }
+        align-content: flex-start; }
+        #Glabs #SocialMediaIcons .GlabsContainer .ResponsiveContainer .ClientDetails img {
+          width: 80px;
+          margin: 0 1rem; }
 
 @-webkit-keyframes scale-in-center {
   0% {
@@ -1068,54 +1090,56 @@ blockquote {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: flex-start;
-    margin-top: 5rem;
-    height: max-content; }
+    height: max-content;
+    margin-bottom: 1rem; }
     #Glabs #Footer h3 {
-      font-size: .9rem;
+      font-size: 1.1rem;
       font-weight: 100;
       margin-bottom: 0;
-      background-color: #69D1CA;
       padding: 7px 10px 5px;
       border-radius: 5px 5px 0 0; }
       #Glabs #Footer h3 a {
-        font-size: .9rem;
+        font-size: 1rem;
         font-weight: 800;
-        color: #fefdf8; }
+        color: #000; }
     #Glabs #Footer .InnerFooter {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-evenly;
       align-items: center;
-      align-content: space-evenly;
-      background-color: #69D1CA; }
+      align-content: space-evenly; }
       #Glabs #Footer .InnerFooter .PartnerZoneLinks {
         flex-grow: 1;
+        flex-basis: 49%;
+        margin: 0 .5%;
+        border-top: 1px solid #69D1CA;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         align-content: center;
-        background-color: #69D1CA; }
+        background-color: #f6f6f6;
+        color: #000; }
         #Glabs #Footer .InnerFooter .PartnerZoneLinks a {
           flex-grow: 1;
-          padding: 2rem 0;
-          color: #fefdf8;
-          text-align: center;
+          padding: .1rem .5rem 1rem;
+          color: #000;
+          text-align: left;
+          min-height: 80px;
           margin-top: .5rem;
           text-shadow: 0 0 0 rgba(0, 0, 0, 0);
           -webkit-transition: all .5s;
           /* Safari prior 6.1 */
-          transition: all .5s; }
+          transition: all .5s;
+          font-weight: 100; }
         #Glabs #Footer .InnerFooter .PartnerZoneLinks a:hover {
-          margin-top: 0rem;
-          text-shadow: 0 0 0 rgba(0, 0, 0, 0.35); }
-      #Glabs #Footer .InnerFooter .PartnerZoneLinks:nth-child(odd) {
-        background-color: #60c0ba; }
+          text-shadow: 0 0 0 rgba(0, 0, 0, 0.35);
+          text-decoration: underline; }
     @media only screen and (min-width: 1824px) {
       #Glabs #Footer div.GlabsContainer {
         width: 78.75rem; } }

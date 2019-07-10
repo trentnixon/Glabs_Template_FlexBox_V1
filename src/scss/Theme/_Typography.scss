@@ -8,12 +8,25 @@ p,span,a,blockquote { font-family: $FontFamilyBody; }
 p.standfirst{
     font-size: $standfirst;
     line-height: $standfirst ;
+    margin: 0 0 20px 0;
+}
+
+#Bottom{
+    .BodyCopy{
+        border-bottom: 1px solid #9B9B9B;
+        padding: 0;
+        p{
+            font-style: italic;
+            font-weight: 800;
+            font-size: 16px;
+        }
+    }
 }
 
 p.cta{
-    border-top: 1px solid $Color4;
+
     text-align: center;
-    padding: 2rem 10rem;
+    
     margin: 2rem 0 0;
     font-size: $PCTA;
     line-height: $PCTA;

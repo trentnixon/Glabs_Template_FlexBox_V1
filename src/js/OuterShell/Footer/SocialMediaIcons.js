@@ -9,13 +9,14 @@ function Footer(props){
     return(
         <div id="SocialMediaIcons" className="SocialMediaIcons" >
                 <GlabsContainer>
+                <TrackVisibility>
+                        <ClientDetails Client={props.UI.Client} />
+                    </TrackVisibility>
                     <TrackVisibility> 
                         <ShareOptions {... props} />
                     </TrackVisibility>
 
-                    <TrackVisibility>
-                        <ClientDetails Client={props.UI.Client} />
-                    </TrackVisibility>
+                  
                     
                 </GlabsContainer>
         </div>

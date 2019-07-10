@@ -16,7 +16,13 @@ function Header(props){
     SetMargin(Math.floor(ReturnHeight/2));
     
   })
-
+/**
+ *  <div className="SponserTab" style={{bottom:-(BottomMargin+100)+"px"}}>
+            <div className={" SponserTabInner"}>
+                <ClientDetails Client={props.Client} />
+            </div>
+        </div>
+ */
 return(
   
     <div id="MainTitle" >
@@ -31,13 +37,9 @@ return(
               <h1 className="tracking-in-expand">{props.SubHeader}</h1>
           </div>
       </div>
-        <div className="SponserTab" style={{bottom:-(BottomMargin+100)+"px"}}>
-            <div className={" SponserTabInner"}>
-                <ClientDetails Client={props.Client} />
-            </div>
-        </div>
+       
     </div>
-  )
+  ) 
 }
 
 export default Header;
